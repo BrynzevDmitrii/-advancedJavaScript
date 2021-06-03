@@ -1,0 +1,59 @@
+.header{
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.burgerds{
+    font-size: 30px;
+    color: rgb(138, 50, 211);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.jhiuo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.size{
+    width: 150px;
+    height: 50px;
+    background-color: burlywood;
+    border-radius: 30px;
+}
+
+.big{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(133, 37, 7);
+    border-radius: 30px;
+}
+
+
+.title{
+    border: 1px solid;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.stuffTitle{
+    text-align: center;
+    margin-top: 39px;
+    text-decoration: underline;
+}
+
+.bascet__title{
+    text-align: center;
+}
