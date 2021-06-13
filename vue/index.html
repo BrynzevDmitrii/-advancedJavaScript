@@ -1,0 +1,39 @@
+<meta charset="UTF-8" />
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <title>eShop</title>
+    <link rel="stylesheet" href="stale.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <input type="text"  v-model ="searchLine" class="goods-search"
+          :placeholder = 'filertPlaseholder'
+          />
+        <button @click ="searchLineRet" class="search-button" type="button"  >Искать</button>
+        <button class="cart-button" type="button">Корзина</button>
+      </header>
+      <main>
+        <div class="goods-list">
+          <div class="goods-item" v-for="(good, i) in goods">
+            <h3>{{good.product_name}}</h3>
+            <p>{{good.price}}</p>
+        
+            <button @click ="rur(i, $event)" class="buy_button" type="button">Купить</button>      
+          </div>
+        </div>
+      </main>
+      <hr>
+      <div class="bascet">
+        <div class="goods-item" v-for="bas in bascet">
+            <h3>{{bas.product_name}}</h3>
+            <p>{{bas.price}}</p>
+          </div>
+          <div class="igti" v-if = "bascet.length === 0">Нет данных</div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="script.js"></script>
+</html>
